@@ -1,6 +1,6 @@
 {
   "name": "filename-to-module-name",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Get the shortest name file can be required by in Node.js",
   "author": "Eugene Sharygin <eush77@gmail.com>",
   "license": "MIT",
