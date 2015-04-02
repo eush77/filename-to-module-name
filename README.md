@@ -6,7 +6,7 @@
 
 Returns the shortest module name for the given filename.
 
-Here is a pseudocode, the inverse of [require.resolve algorithm used by Node](https://nodejs.org/docs/latest/api/modules.html#modules_all_together):
+Here is a pseudocode, effectively the inverse of [require.resolve algorithm](https://nodejs.org/docs/latest/api/modules.html#modules_all_together) used by Node:
 ```
 1. If X is a directory,
    a. return basename(X)
@@ -24,9 +24,20 @@ Here is a pseudocode, the inverse of [require.resolve algorithm used by Node](ht
 [david]: https://david-dm.org/eush77/filename-to-module-name
 [david-badge]: https://david-dm.org/eush77/filename-to-module-name.png
 
+## Example
+
+```js
+var moduleName = require('filename-to-module-name');
+
+moduleName('./index.js');
+//=> "index"
+```
+
 ## API
 
 ### `filenameToModuleName(filename)`
+
+Returns the module name. `filename` should be a name of an existing file or directory.
 
 ## Install
 
