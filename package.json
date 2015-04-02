@@ -28,5 +28,7 @@
     "extension"
   ],
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "tape": "^3.5.0"
+  }
 }

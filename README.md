@@ -12,11 +12,11 @@ Here is a pseudocode, the inverse of [require.resolve algorithm used by Node](ht
    a. return basename(X)
    b. STOP
 2. Let Y be X with ".js", ".json" or ".node" removed
-3. If exists(Y), return X. STOP
+3. If exists(Y), return basename(X). STOP
 4. For E in [".js", ".json", ".node"],
-   a. If X ends with E, return Y. STOP
-   b. If exists(Y + E), return X. STOP
-5. Return X
+   a. If X ends with E, return basename(Y). STOP
+   b. If exists(Y + E), return basename(X). STOP
+5. Return basename(X)
 ```
 
 [travis]: https://travis-ci.org/eush77/filename-to-module-name
